@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  # ============================================================================
+  # Redis Stack: In-memory store with RedisSearch vector search capability
+  # ============================================================================
+  redis:
+    image: redis/redis-stack:latest
+    container_name: llm-eval-proxy-redis
+    ports:
+      - "6379:6379"    # Redis server port
+      - "8001:8001"    # RedisInsight web UI
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+  # ============================================================================
+  # LLM Gateway & Evaluation Proxy Service
+  # ============================================================================
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm-eval-proxy-app
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=llm-eval-proxy
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - AUTH_ENABLED=true
+      - GATEWAY_API_KEYS={"dev-key-001":"dev_service"}
+      - REDIS_URL=redis://redis:6379
+      - CACHE_TTL_SECONDS=86400
+      - CACHE_SIMILARITY_THRESHOLD=0.08
+      - EMBEDDING_PROVIDER=local
+      - EMBEDDING_MODEL_NAME=all-MiniLM-L6-v2
+      - DEFAULT_PROVIDER=mock
+      - CB_FAILURE_THRESHOLD=5
+      - CB_FAILURE_WINDOW_SECONDS=30
+      - CB_COOLDOWN_SECONDS=60
+      - CB_HALF_OPEN_PROBE_RATIO=0.10
+      - CB_REQUEST_TIMEOUT_MS=8000
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+    driver: local

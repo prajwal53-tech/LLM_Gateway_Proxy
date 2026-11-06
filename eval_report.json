@@ -1,0 +1,266 @@
+{
+  "status": "PASSED",
+  "timestamp": "2026-11-06T16:10:11Z",
+  "duration_seconds": 0.0,
+  "total_test_cases": 25,
+  "passed_test_cases": 25,
+  "pass_rate": 1.0,
+  "threshold": 0.85,
+  "aggregate_metrics": {
+    "avg_faithfulness": 0.9828,
+    "avg_hallucination": 0.0172,
+    "composite_score": 0.9828
+  },
+  "results": [
+    {
+      "input": "What is the capital of France?",
+      "expected_output": "The capital of France is Paris.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the primary function of mitochondria in eukaryotic cells?",
+      "expected_output": "Mitochondria are organelles that generate cellular energy in the form of ATP through oxidative phosphorylation.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "How do you define an asynchronous coroutine in Python 3.12+?",
+      "expected_output": "An asynchronous coroutine is defined using the async def syntax and executed using asyncio.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the value of the speed of light in vacuum?",
+      "expected_output": "The speed of light in vacuum is approximately 299,792,458 meters per second.",
+      "metrics": {
+        "faithfulness": 0.9,
+        "hallucination": 0.1,
+        "composite": 0.9
+      },
+      "passed": true
+    },
+    {
+      "input": "Who wrote the play Romeo and Juliet?",
+      "expected_output": "William Shakespeare wrote the tragedy Romeo and Juliet.",
+      "metrics": {
+        "faithfulness": 0.8333,
+        "hallucination": 0.1667,
+        "composite": 0.8333
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the Pythagorean theorem formula for a right triangle?",
+      "expected_output": "The Pythagorean theorem formula for a right triangle is a^2 + b^2 = c^2.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is semantic caching in LLM gateway architectures?",
+      "expected_output": "Semantic caching stores query embeddings and pre-computed responses to return cached results for semantically similar prompts.",
+      "metrics": {
+        "faithfulness": 0.9286,
+        "hallucination": 0.0714,
+        "composite": 0.9286
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the largest planet in our solar system?",
+      "expected_output": "Jupiter is the largest planet in our solar system.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the time complexity of searching an element in a balanced binary search tree?",
+      "expected_output": "The time complexity of search in a balanced binary search tree is O(log n).",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the primary chemical component of water?",
+      "expected_output": "Water consists of two hydrogen atoms covalently bonded to one oxygen atom (H2O).",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "In what year did the Apollo 11 mission land humans on the Moon?",
+      "expected_output": "Apollo 11 landed humans on the Moon on July 20, 1969.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What HTTP status code represents Too Many Requests caused by rate limiting?",
+      "expected_output": "HTTP status code 429 indicates Too Many Requests due to rate limiting.",
+      "metrics": {
+        "faithfulness": 0.9091,
+        "hallucination": 0.0909,
+        "composite": 0.9091
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the process by which green plants produce glucose using sunlight?",
+      "expected_output": "Photosynthesis is the process by which plants convert carbon dioxide and water into glucose using sunlight.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the purpose of a circuit breaker pattern in distributed software systems?",
+      "expected_output": "A circuit breaker prevents cascading failures by stopping calls to a failing remote service and allowing graceful degradation.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the capital of Japan?",
+      "expected_output": "The capital of Japan is Tokyo.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the derivative of sin(x) with respect to x?",
+      "expected_output": "The derivative of sin(x) with respect to x is cos(x).",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "Which algorithm is commonly used for approximate nearest neighbor vector search in Redis?",
+      "expected_output": "Hierarchical Navigable Small World (HNSW) is commonly used for approximate nearest neighbor vector search in Redis.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the boiling point of pure water at 1 atmosphere of pressure in Celsius?",
+      "expected_output": "The boiling point of water at 1 atmosphere of pressure is 100 degrees Celsius.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the primary role of the CPU in a computer architecture?",
+      "expected_output": "The CPU executes program instructions, performs arithmetic and logic operations, and controls data flow.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "Who developed the theory of General Relativity?",
+      "expected_output": "Albert Einstein developed the theory of General Relativity in 1915.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What data structure operates on a Last-In, First-Out (LIFO) principle?",
+      "expected_output": "A stack is a data structure that operates on a Last-In, First-Out (LIFO) principle.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the chemical symbol for gold on the periodic table?",
+      "expected_output": "The chemical symbol for gold is Au.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the purpose of OpenTelemetry in modern cloud applications?",
+      "expected_output": "OpenTelemetry provides a standardized framework for collecting, generating, and exporting distributed traces, metrics, and logs.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the capital of Australia?",
+      "expected_output": "The capital of Australia is Canberra.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    },
+    {
+      "input": "What is the main advantage of using Docker multi-stage builds?",
+      "expected_output": "Multi-stage builds reduce final image size and enhance security by separating build tools from the runtime container.",
+      "metrics": {
+        "faithfulness": 1.0,
+        "hallucination": 0.0,
+        "composite": 1.0
+      },
+      "passed": true
+    }
+  ]
+}
